@@ -1,8 +1,8 @@
-import { render, screen } from '@testing-library/react';
-import App from './App';
+import { render, screen } from "@testing-library/react";
+import App from "./App.jsx";
 
-test('renders learn react link', () => {
+test("renders add a new todo input", () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+  const linkElement = screen.queryByPlaceholderText(/Add a new todo/i);
   expect(linkElement).toBeInTheDocument();
 });
