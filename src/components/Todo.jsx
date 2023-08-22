@@ -16,7 +16,18 @@ export default function Todo() {
       <button onClick={() => setList([...list, input])}>Add</button>
       <ul>
         {list.map((item, index) => (
-          <li key={index}>{item}</li>
+          <div>
+            <li key={index}>{item}</li>
+            <button
+              onClick={() => {
+                const newList = [...list];
+                newList.splice(index, 1);
+                setList(newList);
+              }}
+            >
+              Delete
+            </button>
+          </div>
         ))}
       </ul>
     </div>
