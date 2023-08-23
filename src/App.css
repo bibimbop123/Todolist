@@ -9,20 +9,19 @@
   font-size: calc(10px + 2vmin);
   color: #F7F9F9;
 }
+
 .list-item {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: auto;
   background-color: #F7F9F9;
   color: #601700;
   font-size: calc(10px + 2vmin);
   border: #601700 1px solid;
   border-radius: 5px;
-  margin: 10px;
-  padding: 10px;
   text-align: center;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
@@ -35,7 +34,12 @@
 ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-gap: 1rem;
+  list-style: none;
+  padding: 7rem;
+  margin: 5rem;
+
+  
 }
 
 @media screen and (max-width: 768px) {
