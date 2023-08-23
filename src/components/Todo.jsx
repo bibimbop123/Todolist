@@ -52,7 +52,7 @@ export default function Todo() {
       <button onClick={handleAdd}>Add</button>
       <ul>
         {list.map((item, index) => (
-          <div key={index}>
+          <div className="list-item-container" key={index}>
             <li className="list-item">
               {item}
               {completed.includes(index) && " ✅"}
@@ -64,12 +64,30 @@ export default function Todo() {
                   value={editInput}
                   onChange={(e) => setEditInput(e.target.value)}
                 />
-                <button onClick={() => handleUpdate(index)}>Update</button>
+                <button
+                  className="updatebutton"
+                  onClick={() => handleUpdate(index)}
+                >
+                  Update
+                </button>
               </>
             )}
-            <button onClick={() => handleEdit(item, index)}>Edit</button>
-            <button onClick={() => handleDelete(index)}>Delete</button>
-            <button onClick={() => handleComplete(index)}>
+            <button
+              className="editbutton"
+              onClick={() => handleEdit(item, index)}
+            >
+              Edit
+            </button>
+            <button
+              className="deletebutton"
+              onClick={() => handleDelete(index)}
+            >
+              Delete
+            </button>
+            <button
+              className="completebutton"
+              onClick={() => handleComplete(index)}
+            >
               {completed.includes(index) ? "Uncomplete" : "Complete"}
             </button>
           </div>
