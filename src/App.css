@@ -110,8 +110,8 @@ ul {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   list-style: none;
-  padding: 7rem;
-  margin: 5rem;
+  padding: 3rem;
+  margin: 3rem;
 
   
 }
