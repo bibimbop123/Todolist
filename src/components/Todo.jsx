@@ -54,13 +54,7 @@ export default function Todo() {
         {list.map((item, index) => (
           <div key={index}>
             <li className="list-item">
-              <span
-                style={{
-                  textDecoration: completed.includes(index) ? "none" : "none",
-                }}
-              >
-                {item}
-              </span>
+              {item}
               {completed.includes(index) && " ✅"}
             </li>
             {edit && (
