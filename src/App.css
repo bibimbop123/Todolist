@@ -1,0 +1,20 @@
+.App {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #00A676;
+  font-size: calc(10px + 2vmin);
+  color: #F7F9F9;
+}
+.list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #A76D60;
+  padding: 10px;
+  border: #601700 1px solid;
+}

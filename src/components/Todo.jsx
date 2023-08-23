@@ -54,12 +54,14 @@ export default function Todo() {
         {list.map((item, index) => (
           <div key={index}>
             <li
+              className="list-item"
               style={{
                 textDecoration: completed.includes(index) ? "line-through" : "",
               }}
             >
               {item}
             </li>
+            <br />
             {edit && (
               <>
                 <input
