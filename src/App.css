@@ -15,7 +15,7 @@
   justify-content: center;
   align-items: center;
   width: 80%;
-  height: 80%%;
+  height: 80%;
   background-color: #F7F9F9;
   color: #601700;
   font-size: calc(10px + 2vmin);
@@ -26,6 +26,10 @@
   text-align: center;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+}
+.list-item:hover {
+  border-color: #F7F9F9;
+  border-width: 2px;
 }
 
 ul {
