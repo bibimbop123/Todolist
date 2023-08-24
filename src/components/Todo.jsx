@@ -11,6 +11,7 @@ export default function Todo() {
   const handleAdd = () => {
     setList([...list, input]);
     setInput("");
+    setCompleted([...completed, false]);
   };
 
   const handleDelete = (index) => {
