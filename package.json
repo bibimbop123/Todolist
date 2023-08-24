@@ -36,7 +36,6 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-syntax-jsx": "^7.22.5",
     "jest": "^27.5.1"
   }
 }
