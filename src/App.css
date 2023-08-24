@@ -20,7 +20,6 @@
   background-color: #F7F9F9;
   color: #601700;
   font-size: calc(10px + 2vmin);
-
   border-radius: 5px;
   text-align: center;
   text-decoration: none;
@@ -28,6 +27,8 @@
   padding: 0.5rem;
   box-sizing: border-box;
   line-height: 3rem;
+  overflow: hidden;
+  overflow-y: auto;
 }
 .list-item-container {
   display: flex;
